@@ -1,0 +1,324 @@
+.navbar {
+  position: static;
+}
+
+h1 {
+  font-family: 'PF Din Display Pro Bold';
+  font-size: 38px;
+  color: #1f2a33;
+  margin: 0.4em 0;
+}
+
+h2 {
+  font-family: 'PF Din Display Pro Light';
+  color: white;
+  font-size: 38px;
+  margin: 0.4em 0;
+}
+
+h3 {
+  font-family: 'PF Din Display Pro Thin';
+  font-size: 44px;
+  color: #1f2a33;
+}
+
+h4  {
+  font-family: 'PF Din Display Pro Bold';
+  font-size: 20px;
+  color: #364a59;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'PF Din Display Pro Regular';
+  font-size: 17px;
+  color: #364a59;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+h6 {
+  font-family: 'PF Din Display Pro Light';
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 1.5;
+  color: #486175;
+  padding: 0 5%;
+}
+
+p {
+  font-family: 'PF Din Display Pro Light';
+  font-size: 19px;
+  color: #616466;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  background-image: url("../img/BG.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-wrap {
+  padding: 40px 10% 0 10%;
+  position: relative;
+}
+
+.arrow-screen {
+  position: absolute;
+  bottom: -65%;
+  right: 0;
+  width: auto;
+}
+
+a.video-block__link {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 71.3%;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-block__button {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-block__button span {
+  color: white;
+  font-size: 17px;
+}
+
+.video-button {
+  background-color: #f48351;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.video-button  svg {
+  width: 100%;
+}
+
+.video-button:hover {
+  background-color: #f05634;
+  width: 160px;
+  height: 160px;
+}
+
+.block-caption {
+  text-align: left;
+  font-family: 'PF Din Display Pro Medium';
+  font-size: 24px;
+  color: #364a59;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.video-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-box__item {
+  width: 23.4%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.video-box__item:hover h5{
+  text-decoration: underline;
+  color: #4b7dc4;
+}
+
+.program-data__icon {
+  max-width: 75px;
+}
+
+.program-data__collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.expand-button {
+  order: 1;
+}
+
+.expand-button.rotate img {
+  transform: rotate(180deg);
+}
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active {
+  display: block;
+}
+
+.expand-button {
+  order: 1;
+  font-size: 16px;
+  font-family: 'PF Din Display Pro Regular';
+  cursor: pointer;
+  align-self: baseline;
+  width: 160px;
+  height: 40px;
+  background-color: #e6edf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #516685;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.expand-button img {
+  margin-left: 15px;
+}
+
+.program-data__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.program-data__link {
+  font-family: 'PF Din Display Pro Light';
+  color: #3471c7;
+  font-size: 19px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.program-data__link:hover {
+  color: #f5743d;
+}
+
+.expand-button img {
+  max-width: 10px;
+}
+
+.program-data__column {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.program-data {
+  display: flex;
+  margin: 30px 0 70px 0;
+}
+
+.program-data__divider {
+  width: 2px;
+  height: 628px;
+  background-color: #e4e8ed;
+  margin: auto 70px auto 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1  {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h6 {
+    font-size: 16px;
+    padding: 0 10%;
+  }
+  a.video-block__link {
+    width: 60%;
+  }
+  .arrow-screen {
+    right: 7%;
+  }
+  .video-button {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+  .text-wrap {
+    padding: 0;
+    padding-top: 2vw;
+  }
+  .arrow-screen {
+    right: 0;
+  }
+  .video-box__item {
+    width: 47.4%;
+  }
+
+  .program-data {
+    flex-direction: column;
+  }
+
+  .program-data__column {
+    width: 100%;
+  }
+
+  .program-data__divider {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .arrow-screen {
+    display: none;
+  }
+  a.video-block__link {
+    width: 100%;
+  }
+  .main-content {
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  .video-box {
+    justify-content: center;
+  }
+  .video-box__item {
+    width: 80%;
+  }
+  .block-caption {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 399px) {
+
+  .video-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
