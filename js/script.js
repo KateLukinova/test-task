@@ -1,16 +1,24 @@
-var coll = document.getElementsByClassName("expand-button");
-var i;
+$(document).ready(function () {
+    var coll = document.getElementsByClassName("expand-button");
+    var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle('rotate');
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle('active');
 
-        var content = this.nextElementSibling.nextElementSibling;
+            if ($(this).hasClass('active')) {
+                $(this).find('.button-text').text('Уменьшить')
+            } else {
+                $(this).find('.button-text').text('Больше статей')
+            }
 
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
-}
+            var content = this.nextElementSibling.nextElementSibling;
+
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+});
